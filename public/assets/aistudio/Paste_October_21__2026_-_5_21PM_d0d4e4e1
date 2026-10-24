@@ -1,0 +1,636 @@
+# MASTER BUILD PROMPT — WILDLIFE & INNOVATION KNOWLEDGE PLATFORM
+
+## 1. Your Role
+
+Act as a senior product designer, UI/UX architect, full-stack engineer, database architect, accessibility specialist, and technical lead.
+
+Your task is to design and build a polished, responsive, deployable website for a personal knowledge and innovation platform founded by a student from India who is passionate about wildlife, scientific thinking, and solving real-world problems.
+
+Do not create a generic blog template, a basic portfolio, or a static landing page that merely looks impressive in a screenshot. Build a coherent, content-driven web application that can grow into a serious public platform.
+
+Make sensible product and technical decisions independently. Prioritize quality, usability, maintainability, and a working implementation over unnecessary complexity.
+
+## 2. Product Vision
+
+The website has three core pillars:
+
+1. **Wildlife Dictionary** — discover and understand wildlife species.
+2. **Problems of India** — investigate important problems and develop evidence-based, implementable solutions.
+3. **Community** — bring people together to discuss wildlife, challenge ideas, and improve solutions.
+
+The website will publish new editorial content weekly. It will initially focus on India, with the ability to expand to global wildlife and international problems in the future.
+
+The experience should feel like a premium scientific publication combined with a modern innovation journal.
+
+The core user experience must be:
+
+- Visually distinctive and memorable.
+- Elegant, immersive, and professional.
+- Minimal and uncluttered, with excellent readability.
+- Easy to navigate, search, explore, and return to.
+- Trustworthy, informative, and respectful of scientific evidence.
+- Responsive across mobile phones, tablets, laptops, and large desktops.
+
+The design should inspire curiosity and confidence without overwhelming visitors with animations, excessive text, or decorative elements.
+
+## 3. Brand Identity and Visual Design
+
+Create a distinctive visual identity for the platform.
+
+### Art direction
+
+Use the design principles of premium editorial magazines, natural-history publications, and contemporary scientific journals.
+
+Preferred characteristics:
+
+- Deep forest green, warm ivory, charcoal, and restrained earthy accents.
+- Large, beautiful wildlife photography.
+- Sophisticated typography with expressive editorial headings and highly readable body text.
+- Strong visual hierarchy and generous whitespace.
+- Carefully designed grids, subtle borders, refined cards, and consistent spacing.
+- Elegant hover states, smooth transitions, and restrained motion.
+- Beautiful article layouts with excellent typography and comfortable reading widths.
+- Consistent iconography and a unified design system.
+
+Use a serif typeface for selected editorial headings and a clean sans-serif typeface for navigation, controls, metadata, and body text where appropriate.
+
+Avoid:
+
+- Generic AI startup aesthetics.
+- Excessive gradients, glowing borders, and glassmorphism.
+- Overuse of rounded cards.
+- Oversized dashboard components.
+- Excessive animations and parallax effects.
+- Tiny text, low contrast, cluttered navigation, and unnecessarily complex layouts.
+- Fake statistics, fabricated testimonials, and decorative elements without a purpose.
+
+Use high-quality, appropriately licensed images or reliable image sources. Never misrepresent a stock image as the founder's own photograph. Design elegant image placeholders and graceful fallbacks when images are unavailable.
+
+Create reusable design tokens for colours, typography, spacing, borders, radii, shadows, and interaction states.
+
+## 4. Information Architecture and Navigation
+
+Create a clear global navigation system with:
+
+- Home
+- Wildlife Dictionary
+- Problems of India
+- Community
+- About
+- Search
+- A discreet account/profile entry when authentication is implemented.
+
+The navigation must work on desktop and mobile. On smaller screens, provide an elegant, accessible mobile menu.
+
+Include a consistent footer containing links to the main sections, About, Contact, editorial standards, privacy policy, terms of use, and community guidelines.
+
+Design the navigation so that visitors always understand where they are and how to return to the previous level.
+
+## 5. Homepage
+
+Build a distinctive editorial homepage, not just a hero section followed by generic cards.
+
+### Section A: Hero
+
+Create a visually striking, full-width editorial hero.
+
+Include:
+
+- A concise, memorable headline communicating curiosity, knowledge, and solutions.
+- A short supporting description explaining the three pillars.
+- A primary action leading to the latest wildlife content.
+- A secondary action leading to the latest problem investigation.
+- An exceptional but performance-optimized hero image.
+- A clear visual hierarchy that remains beautiful on mobile.
+
+Write original, thoughtful placeholder copy. Do not use exaggerated claims.
+
+### Section B: Explore the three pillars
+
+Present Wildlife Dictionary, Problems of India, and Community as three distinct yet visually related destinations.
+
+Each destination should have its own visual identity while remaining part of the same brand.
+
+### Section C: Latest wildlife discoveries
+
+Display the latest published wildlife articles with:
+
+- Cover image.
+- Common name and scientific name.
+- Habitat or geographical context.
+- Short editorial summary.
+- Publication date.
+- Relevant taxonomy or topic labels.
+- A clear action to read the full article.
+
+### Section D: Featured problem investigation
+
+Highlight one important problem with a strong editorial layout.
+
+Show the problem, why it matters, the proposed approach, and a link to the complete investigation.
+
+### Section E: Latest community discussions
+
+Display selected recent discussions, unanswered questions, or active topics when real data exists.
+
+Never invent community activity or display fabricated engagement metrics.
+
+### Section F: Weekly publication and newsletter
+
+Provide a clear way to discover the latest weekly publication.
+
+If a newsletter is implemented, make subscriptions functional, validate submissions, handle errors, and include appropriate consent and unsubscribe mechanisms. Do not display a fake subscription success message.
+
+### Section G: Footer
+
+Finish with a restrained, well-designed footer that reinforces the platform's identity.
+
+## 6. Wildlife Dictionary
+
+This section should function as a searchable, expandable wildlife knowledge library rather than a conventional blog archive.
+
+### Main listing page
+
+Implement:
+
+- Prominent search with useful suggestions.
+- Search by common name, scientific name, and relevant keywords.
+- Filters for taxonomy, habitat, geographic region, conservation status, and other meaningful attributes.
+- Sorting by name, recently published, and other relevant options.
+- A responsive editorial grid with high-quality photographs.
+- Clear empty states, loading states, and error handling.
+- Pagination or efficient incremental loading.
+- Shareable URLs for search queries and filters where practical.
+
+Do not add filters that cannot be supported by the actual data.
+
+### Individual species pages
+
+Each species should have its own stable, shareable URL.
+
+Provide a flexible editorial template containing applicable fields such as:
+
+- Common name.
+- Scientific name.
+- Taxonomic classification.
+- Identification and physical characteristics.
+- Geographic distribution.
+- Habitat and ecosystem.
+- Diet and feeding behaviour.
+- Behaviour and social structure.
+- Reproduction and life cycle.
+- Ecological role.
+- Conservation status.
+- Threats and conservation measures.
+- Interesting but scientifically defensible facts.
+- References and further reading.
+- Related species.
+- Publication and last-updated dates.
+- Image credits and licences.
+
+Make the page visually immersive at the top, with excellent typography and a structured reading experience below.
+
+Use collapsible sections only where they improve navigation. Keep important scientific information visible and easy to scan.
+
+### Wildlife photography
+
+Build the data model and interface to support a future photography collection.
+
+Include support for:
+
+- Photographer credit.
+- Image caption.
+- Species association.
+- Location at an appropriate privacy-safe level.
+- Capture date when appropriate.
+- Image licensing and usage rights.
+- Accessible alternative text.
+- Optimized image delivery.
+
+The founder must be able to upload and publish original photographs through an administrative workflow. Do not claim that existing stock images are original photographs.
+
+Avoid publishing precise locations of vulnerable wildlife, nests, or sensitive species.
+
+## 7. Problems of India
+
+This is a central feature of the platform. It should feel like a serious problem-solving journal, not an opinion blog.
+
+### Main listing page
+
+Create a searchable, filterable collection of investigations.
+
+Use meaningful categories such as:
+
+- Education
+- Healthcare
+- Agriculture
+- Environment and climate
+- Water and sanitation
+- Energy
+- Infrastructure and transport
+- Technology and digital systems
+- Economy and employment
+- Governance and public services
+- Wildlife and biodiversity
+- Science and research
+
+Allow new categories to be added without restructuring the application.
+
+Support search by title, topic, keywords, and relevant content. Add filters for category, publication date, and status where useful.
+
+Each investigation card should display a title, concise summary, category, publication date, cover image when available, and a clear reading action.
+
+### Individual problem investigation pages
+
+Build a comprehensive, reusable editorial template with the following sections where applicable:
+
+1. **Problem statement:** Define the precise problem.
+2. **Executive summary:** Explain the issue and proposed direction concisely.
+3. **Why it matters:** Describe the people, communities, ecosystems, or systems affected.
+4. **Evidence and context:** Present credible statistics, research, case studies, and source citations.
+5. **Root-cause analysis:** Distinguish underlying causes from visible symptoms.
+6. **Existing approaches:** Examine what is already being attempted and where gaps remain.
+7. **Proposed solution:** Explain the approach and why it could work.
+8. **Solution architecture:** Describe the components, processes, technologies, institutions, and stakeholders involved.
+9. **Implementation blueprint:** Provide a step-by-step, actionable roadmap.
+10. **Resources and costs:** Present transparent assumptions, approximate cost ranges, and resource requirements where credible estimates are possible.
+11. **Risks and limitations:** Discuss unintended consequences, trade-offs, and possible failure modes.
+12. **Pilot programme:** Explain how the proposal could be tested on a small scale.
+13. **Evaluation metrics:** Define measurable indicators of success.
+14. **Scaling strategy:** Explain how a successful pilot might expand.
+15. **References and further reading:** Link to credible, verifiable sources.
+16. **Community discussion:** Let readers question the proposal and suggest improvements.
+
+Do not force every investigation into identical content if a particular section is irrelevant. Allow the author to customize article structure.
+
+Distinguish established facts, reasonable inferences, hypotheses, and original proposals. Never fabricate statistics, references, costs, or evidence of success.
+
+A proposed solution must not be presented as proven simply because it sounds technically sophisticated.
+
+Make it possible to revise and version investigations as better evidence or community feedback becomes available.
+
+## 8. Community
+
+Build a structured discussion space for wildlife enthusiasts, students, researchers, and people interested in solving problems.
+
+### Community features
+
+Implement a coherent MVP with:
+
+- User registration and login.
+- User profiles with display names and optional biographies.
+- Topic-based discussions.
+- Categories for wildlife, Indian problems, solution proposals, science, and general discussion.
+- Create, edit, and delete permissions for a user's own content.
+- Threaded replies or a clearly designed reply system.
+- Reactions or likes, with protection against duplicate actions.
+- Search and category filters.
+- Sorting by recent activity and other useful criteria.
+- Links from discussions to relevant wildlife species and problem investigations.
+- Reporting for inappropriate content.
+- Moderation controls for authorized moderators.
+- Clear empty states and helpful prompts encouraging meaningful participation.
+
+If feasible within the selected stack, allow a discussion to be linked to a specific article or proposed solution.
+
+### Community quality
+
+Encourage thoughtful disagreement, evidence-based discussion, constructive criticism, and collaborative improvement.
+
+Provide community guidelines against harassment, spam, impersonation, and misleading claims.
+
+Protect users from unauthorized access to private account information. Public profiles should reveal only information intentionally made public.
+
+Do not create public direct messaging in the MVP unless it can be implemented safely and maintained properly.
+
+Do not show fake users, fabricated posts, fake likes, or fictional activity as real community data.
+
+## 9. Content Management and Administration
+
+The website needs a proper publishing workflow because new content will be published every week.
+
+Create a protected administrative area that is not accessible to ordinary users.
+
+The administrator should be able to:
+
+- Create, edit, preview, publish, unpublish, and archive articles.
+- Save drafts and return to them later.
+- Manage wildlife species and taxonomy.
+- Manage problem investigations and categories.
+- Upload and manage photographs.
+- Set cover images, captions, image credits, and alternative text.
+- Add references and external links.
+- Add tags, summaries, and SEO metadata.
+- Schedule publication if supported by the selected architecture.
+- View and moderate community reports.
+- Manage content categories.
+- Preview content before publication.
+
+Use a practical editor with headings, paragraphs, lists, links, images, captions, quotations, and tables.
+
+If a rich-text editor is not supported reliably, implement a well-designed structured editor rather than an unreliable imitation.
+
+Drafts must not appear in public listings or public search results.
+
+The admin interface should be simple enough for a student to operate without editing source code every time a new weekly article is published.
+
+## 10. Technical Architecture
+
+First inspect the capabilities and constraints of the current Google AI Studio build environment and the existing project.
+
+Choose a maintainable, supported architecture suitable for deployment as a public website.
+
+Prefer a modern TypeScript-based frontend and a component-based architecture. Use React if it fits the environment.
+
+Use the available, supported backend and database integrations when appropriate. If Firebase integration is available and suitable, consider:
+
+- Firebase Authentication for identity.
+- Cloud Firestore for structured content and discussions.
+- Cloud Storage for photographs and other media.
+- Security Rules for server-enforced access control.
+
+If a different stack is more suitable, explain the reason briefly and use a coherent alternative.
+
+### Architecture requirements
+
+- Separate reusable UI components from business logic and data-access code.
+- Keep page layouts, navigation, forms, content cards, and design tokens reusable.
+- Define clear data models for users, species, wildlife articles, problem investigations, categories, images, comments, reactions, and reports as applicable.
+- Use stable document identifiers and predictable URL slugs.
+- Include schema validation and safe handling of missing or malformed data.
+- Implement reliable loading, success, empty, and failure states.
+- Avoid unnecessary dependencies and duplicated code.
+- Keep configuration and environment-specific values separate from application logic.
+- Never expose secret keys, private credentials, privileged service accounts, or sensitive configuration in client-side code.
+- Never rely on hiding a UI element as the only authorization mechanism.
+- Enforce authorization in trusted backend code or database security rules.
+- Include error handling, logging appropriate to the deployment, and a maintainable project structure.
+
+Do not create a fake backend that merely returns hardcoded sample data while pretending that content is persistent.
+
+If a real backend or external service has not been connected, clearly identify the limitation and provide a functional preview using explicitly labelled sample data.
+
+## 11. Data Models and Content Integrity
+
+Design the data model before implementing dependent features.
+
+At minimum, plan for:
+
+- Users and roles.
+- Wildlife species.
+- Wildlife articles and species profiles.
+- Problem investigations.
+- Categories and tags.
+- Media assets and image credits.
+- Discussion posts and replies.
+- Reactions.
+- Content reports and moderation actions.
+
+Choose sensible relationships between entities and avoid storing the same information redundantly when it can be referenced safely.
+
+Include creation dates, modification dates, publication dates, publication status, and authorship where appropriate.
+
+Implement appropriate database indexes for common search, filtering, sorting, and feed queries.
+
+Plan how search will work with the chosen database. If the database does not provide full-text search, use a supported search service or a clearly explained MVP alternative rather than claiming unsupported search functionality.
+
+## 12. Search and Discovery
+
+Search is essential to the website.
+
+Create a polished, prominent search experience that is useful on desktop and mobile.
+
+Support the relevant content types across the platform:
+
+- Species and wildlife articles.
+- Problem investigations.
+- Community discussions, where appropriate.
+
+Use contextual filters and clearly identify the type of each result.
+
+Provide useful no-results messages, clear-filter actions, keyboard accessibility, and sensible handling of partial matches.
+
+Search must query the actual available content rather than a hardcoded list of examples.
+
+Preserve query parameters in shareable URLs where practical.
+
+Do not implement a visually impressive search box that does nothing.
+
+## 13. Performance, Accessibility, SEO, and Deployment
+
+Treat these as essential requirements rather than optional polish.
+
+### Performance
+
+- Optimize image sizes and use responsive image delivery.
+- Avoid unnecessary JavaScript and heavy animation libraries.
+- Lazy-load below-the-fold images where appropriate.
+- Prevent layout shifts.
+- Use caching and pagination appropriately.
+- Keep the initial page load fast on ordinary mobile connections.
+
+### Accessibility
+
+- Follow WCAG 2.2 AA principles where practical.
+- Use semantic HTML and a logical heading hierarchy.
+- Ensure keyboard navigation and visible focus indicators.
+- Maintain readable colour contrast.
+- Provide appropriate image alternative text.
+- Associate form controls with labels.
+- Make error messages understandable and accessible.
+- Respect reduced-motion preferences.
+
+### SEO and sharing
+
+- Use descriptive, stable URLs.
+- Generate page-specific titles and meta descriptions.
+- Add canonical URLs when appropriate.
+- Support social sharing metadata and preview images.
+- Create a sitemap and robots.txt suitable for the deployment.
+- Use structured data only where valid and appropriate.
+- Make published content discoverable by search engines.
+- Do not index drafts, private pages, or administrative routes.
+
+### Deployment
+
+Prepare the application for a real public deployment.
+
+Provide:
+
+- Clear installation and development instructions.
+- Required environment variables, documented without real secrets.
+- Database setup and security configuration.
+- Production build instructions.
+- Hosting and deployment instructions appropriate to the chosen stack.
+- A clear distinction between local preview, configured production, and successfully deployed production.
+- A troubleshooting guide for common configuration errors.
+
+Do not claim that the website is deployed, authenticated, or connected to a database unless that has actually been verified.
+
+## 14. Security, Privacy, and Trust
+
+Implement sensible security defaults from the beginning.
+
+- Validate user input on both client and trusted server boundaries as appropriate.
+- Prevent unauthorized modification or deletion of content.
+- Restrict administrative operations to authorized administrators.
+- Protect against common injection and cross-site scripting risks.
+- Apply appropriate rate limiting or abuse controls where supported.
+- Prevent unauthorized media uploads and unsafe file types.
+- Use secure authentication and session handling supported by the chosen stack.
+- Provide appropriate privacy, terms, and community-guideline pages.
+- Collect only the personal data necessary for the service.
+- Provide clear mechanisms for reporting inappropriate content.
+
+For wildlife content, do not expose precise locations of vulnerable species or sensitive nesting sites.
+
+For problem investigations, provide transparent citations and clearly distinguish evidence from opinion.
+
+## 15. Responsive Behaviour and Interaction Quality
+
+Design deliberately for:
+
+- Small mobile phones.
+- Larger phones.
+- Tablets.
+- Standard laptops.
+- Wide desktop displays.
+
+Every interactive element must have a defined purpose and working behaviour.
+
+Buttons, navigation items, search controls, filters, forms, menus, article links, profile controls, and community actions must work as advertised.
+
+Use consistent hover, focus, active, disabled, loading, and error states.
+
+Avoid horizontal overflow, clipped content, awkward mobile grids, tiny touch targets, and intrusive pop-ups.
+
+Use animations sparingly to clarify interaction rather than to decorate every section.
+
+## 16. MVP Priorities
+
+Build a complete, coherent MVP before attempting advanced features.
+
+**Priority 1 — Foundation**
+- Design system and responsive global layout.
+- Homepage and navigation.
+- Wildlife listing and species detail pages.
+- Problem listing and investigation detail pages.
+- Real search and useful filters.
+- About and essential policy pages.
+
+**Priority 2 — Publishing**
+- Persistent content storage.
+- Secure admin authentication.
+- Draft, preview, publish, edit, and archive workflows.
+- Image uploads and credits.
+- Content validation and references.
+
+**Priority 3 — Community**
+- Registration and login.
+- Profiles.
+- Posts, replies, and reactions.
+- Reporting and moderation.
+- Database security and abuse prevention.
+
+**Priority 4 — Growth**
+- Newsletter integration.
+- Advanced search.
+- Bookmarks or saved articles.
+- Reading lists and related content.
+- Analytics and editorial insights.
+- More advanced community features.
+
+Do not sacrifice the core website's reliability and visual quality to include every advanced feature in the first release.
+
+If a feature cannot be implemented fully, identify it explicitly rather than creating a fake or nonfunctional version.
+
+## 17. Testing and Acceptance Criteria
+
+Before considering the application complete, verify the following:
+
+1. All primary routes load correctly.
+2. The layout works on mobile, tablet, and desktop.
+3. Search and filters return appropriate results.
+4. Species and investigation pages display real stored content.
+5. The admin can create, preview, publish, edit, and unpublish content.
+6. Unpublished content remains private.
+7. Authentication and authorization are enforced correctly.
+8. Unauthorized users cannot perform administrative operations.
+9. Community posts, replies, reactions, and reports persist correctly when the backend is configured.
+10. Forms validate input and display meaningful errors.
+11. Image uploads and missing-image fallbacks work correctly.
+12. Navigation, links, and interactive controls work.
+13. Empty, loading, and error states are handled.
+14. Keyboard navigation and readable contrast are maintained.
+15. SEO metadata and public content URLs are correct.
+16. No secrets are exposed in frontend code.
+17. No fake testimonials, fabricated statistics, broken links, or misleading success messages remain.
+18. The production build succeeds without unresolved errors.
+
+Use automated tests where practical and perform a manual walkthrough of the most important user journeys.
+
+## 18. Working Method
+
+Work as an engineer responsible for a real product, not as a mockup generator.
+
+### First, inspect and plan
+
+Inspect the existing project and determine the supported technologies, current file structure, available integrations, and any implementation constraints.
+
+Then provide a concise implementation plan identifying:
+
+- The chosen architecture and why it fits.
+- The primary routes and components.
+- The database and authentication design.
+- The publishing workflow.
+- The search strategy.
+- The security requirements.
+- The order of implementation.
+- Any external configuration or credentials that will require my action.
+
+Do not spend excessive time planning. Once the plan is coherent, begin implementation.
+
+### Then, build and verify
+
+Implement the project in small, coherent stages.
+
+After each stage:
+
+- Check the existing code before modifying it.
+- Reuse working components.
+- Avoid unnecessary rewrites.
+- Run available checks and builds.
+- Fix errors before proceeding.
+- Test the actual interactions.
+- Explain any remaining configuration or implementation gaps.
+
+If the environment cannot perform a particular test, say so honestly.
+
+Do not overwrite functioning work just to regenerate the entire application.
+
+### Final deliverables
+
+At the end, provide:
+
+1. A summary of the implemented features.
+2. The final project structure.
+3. The chosen architecture and data models.
+4. Setup and deployment instructions.
+5. A list of required external configuration steps.
+6. A list of tests performed and their actual results.
+7. A clear list of incomplete features or known limitations.
+8. The single most useful next improvement.
+
+## 19. Final Product Standard
+
+The final result should feel like a carefully crafted, independent knowledge publication that people would genuinely enjoy exploring.
+
+Its wildlife section should inspire curiosity about nature.
+
+Its problem-solving section should encourage rigorous thinking and practical innovation.
+
+Its community should make thoughtful discussion and collaborative learning possible.
+
+Make the interface beautiful, but never at the expense of readability, credibility, accessibility, or functionality.
+
+**Build a real foundation for a long-term platform: distinctive in design, rigorous in content, reliable in engineering, and simple enough for one student to maintain and publish new content every week.**

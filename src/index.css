@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Newsreader', 'Noto Sans Devanagari', Georgia, Cambria, serif;
+    --font-sans: 'Plus Jakarta Sans', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --bg-main: #0B0C0B;
+    --bg-surface: #131513;
+    --bg-surface-elevated: #181B18;
+    --text-primary: #F1EFE8;
+    --text-muted: #A5A59C;
+    --border-subtle: #30322E;
+    --accent-brass: #B5A16A;
+    --accent-forest: #2E473B;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0B0C0B;
+    color: #F1EFE8;
+    -webkit-font-smoothing: antialiased;
+    selection-background-color: #B5A16A;
+    selection-color: #0B0C0B;
+  }
+
+  h1, h2, h3, .font-serif, .font-editorial {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Editorial Dark Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0C0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #30322E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B5A16A;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "VANA — Wildlife & Innovation Knowledge Platform",
+  "description": "An independent scientific wildlife dictionary, evidence-based problem investigation journal for India, and Atlas AI research companion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
